@@ -10,8 +10,11 @@ import UIKit
 
 class TodoCell: UITableViewCell {
 
+    var  checkBtnV = false
+    
     @IBOutlet weak var checkImg: UIImageView!
     @IBOutlet weak var todoLabel: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
