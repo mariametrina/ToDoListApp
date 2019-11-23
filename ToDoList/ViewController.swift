@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        todoTview.delegate = self
+        todoTview.dataSource = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,8 +25,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
+        return cell
+        
+        <#code#>
+    }
+ 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
         <#code#>
     }
 
+    @IBOutlet weak var checkImg: UIImageView!
+    @IBOutlet weak var todoLabel: UILabel!
+    @IBOutlet weak var todoTview: UITableView!
 }
 
