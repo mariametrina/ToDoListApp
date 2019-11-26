@@ -52,6 +52,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 1
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            todoL.remove(at: indexPath.row)
+            todoTview.reloadData()
+        }
+    }
+    
     
     @IBAction func createTodo(_ sender: Any) {
         
@@ -72,6 +79,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         present(todoAlert, animated: true, completion: nil)
         
     }
-
+    
 }
 
