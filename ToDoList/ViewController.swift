@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var todoTview: UITableView!
-    var todoL : [String] = ["Buy Milk", "Call Mom", "Do Assignment"]
+    var todoL : [String] = ["Buy Milk", "Call Mom", "Do Assignment"]    //test
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
-
+   
+    //function to show tick mark on click
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! TodoCell
         if cell.checkBtnV == false{
@@ -52,6 +54,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 1
     }
     
+    //function to delete a todo on swipe
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             todoL.remove(at: indexPath.row)
@@ -59,6 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    //function to show new popup to create new todos
     
     @IBAction func createTodo(_ sender: Any) {
         
@@ -80,5 +85,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+ //   @IBAction func editTodo(_ sender: Any) {
+ //       let switchVC = self.storyboard?.instantiateViewController(withIdentifier: "EditTodo") as! TodoDetailsVC
+        
+  //      self.navigationController?.pushViewController(switchVC, animated: true)
+  //  }
 }
 

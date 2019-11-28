@@ -41,6 +41,14 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-JD-I4P">
+                                                    <rect key="frame" x="348" y="8" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="createTodo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVf-Pl-WLI"/>
+                                                        <action selector="editTodo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ixc-aZ-V4Y"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="nK1-iJ-bvh" firstAttribute="trailing" secondItem="Xo0-yB-rJ7" secondAttribute="trailingMargin" id="GMJ-j7-Qrr"/>
@@ -48,7 +56,9 @@
                                                 <constraint firstItem="wDI-hu-Gow" firstAttribute="bottom" secondItem="nK1-iJ-bvh" secondAttribute="bottom" id="PIu-Z7-yoy"/>
                                                 <constraint firstItem="nK1-iJ-bvh" firstAttribute="centerY" secondItem="Xo0-yB-rJ7" secondAttribute="centerY" id="ema-Xo-lJs"/>
                                                 <constraint firstItem="wDI-hu-Gow" firstAttribute="leading" secondItem="Xo0-yB-rJ7" secondAttribute="leadingMargin" id="ev8-TW-u3x"/>
+                                                <constraint firstItem="FeH-JD-I4P" firstAttribute="trailing" secondItem="nK1-iJ-bvh" secondAttribute="trailing" id="g8P-Vw-oQ5"/>
                                                 <constraint firstItem="nK1-iJ-bvh" firstAttribute="top" secondItem="Xo0-yB-rJ7" secondAttribute="top" id="wLh-Jy-tEJ"/>
+                                                <constraint firstItem="FeH-JD-I4P" firstAttribute="baseline" secondItem="nK1-iJ-bvh" secondAttribute="firstBaseline" id="wU7-wM-qGC"/>
                                                 <constraint firstItem="nK1-iJ-bvh" firstAttribute="leading" secondItem="wDI-hu-Gow" secondAttribute="trailing" constant="22" id="we2-Y0-IOq"/>
                                             </constraints>
                                         </tableViewCellContentView>
