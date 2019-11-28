@@ -2,7 +2,7 @@
 //  TodoCell.swift
 //  ToDoList
 //
-//  Created by Student on 2019-11-23.
+//  Created by Maria on 2019-11-23.
 //  Copyright © 2019 Centennial College. All rights reserved.
 //
 
