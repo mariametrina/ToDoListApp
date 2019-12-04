@@ -9,6 +9,8 @@
 import UIKit
 
 class TodoCell: UITableViewCell {
+    
+    var toDo = ToDo()
 
     var  checkBtnV = false
     
@@ -27,4 +29,9 @@ class TodoCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func showToDoDetails(_ sender: Any) {
+        NotificationCenter.default.post(name: Notification.Name("showDetail"), object: self.toDo)
+
+        
+    }
 }
