@@ -2,7 +2,8 @@
 //  AppDelegate.swift
 //  ToDoList
 //
-//  Created by Maria on 2019-11-13.
+//  Created by Mariaon 2019-11-13.
+//  Student ID - 301089997
 //  Copyright © 2019 Centennial College. All rights reserved.
 //
 

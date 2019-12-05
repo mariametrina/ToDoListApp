@@ -3,6 +3,7 @@
 //  ToDoList
 //
 //  Created by maria on 2019-12-03.
+//  Student ID - 301089997
 //  Copyright © 2019 Centennial College. All rights reserved.
 //
 
@@ -11,7 +12,7 @@ import Foundation
 
 class Database {
     
-    
+    //function to update and save the todo
     func save(todo: ToDo) {
         
         UserDefaults.standard.set(todo.toJSON(), forKey: todo.title) //setObject
@@ -19,6 +20,7 @@ class Database {
 
     }
     
+    //function to delete the todo
     func delete(todo: ToDo) {
         
         UserDefaults.standard.removeObject(forKey: todo.title)
@@ -28,7 +30,7 @@ class Database {
     }
     
    
-    
+    //function to view the todo
     func getAll()->[ToDo] {
         
         var allToDo : [ToDo] = []
